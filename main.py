@@ -10,19 +10,16 @@ screen.bgcolor("black")
 screen.title("Snake")
 screen.tracer(0)
 
-
 game_on = True
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
-
 
 screen.listen()
 screen.onkey(snake.up, "Up")
 screen.onkey(snake.down, "Down")
 screen.onkey(snake.left, "Left")
 screen.onkey(snake.right, "Right")
-
 
 while game_on:
     screen.update()
